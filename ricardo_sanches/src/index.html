@@ -1,0 +1,948 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../node_modules/bootstrap/compiler/bootstrap.css">
+
+        <!-- style.css -->
+        <link rel="stylesheet" href="./styles/css/style.css">
+
+        <!-- Font Awesome -->        
+        <link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.css">
+
+        <title>Curso de Bootstrap4 com ricardo Sanches</title>
+    </head>
+    <body> 
+        
+        <!-- menu nav -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-gradient-primary">
+            <div class="container">
+
+                <a href="#" class="navbar-brand h1 mb-0">Pizzaria</a>
+
+                <button 
+                    class="navbar-toggler" 
+                    type="button" 
+                    data-toggle="collapse" 
+                    data-target="#navbarSite"
+                > 
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSite">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"> Início </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"> Perfil </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"> Pedido </a>
+                        </li>
+                        <li class="nav-item">
+                            <a ref="#" class="nav-link"> Menu </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"> Depoimentos </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link"> Fale conosco </a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a
+                                href="#"
+                                class="nav-link dropdown-toggle"
+                                data-toggle="dropdown"
+                                id="navDrop"> Social
+                            </a>
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">Instagram</a>
+                                <a href="#" class="dropdown-item">Facebook</a>
+                                <a href="#" class="dropdown-item">Twitter</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <form class="form-inline">
+                        <input 
+                            type="search" 
+                            class="form-control ml-4 mr-2"
+                            placeholder="Buscar..."
+                        >
+                        <button class="btn btn-dark" type="submit" >Ok</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- carousel -->
+        <div 
+            class="carousel slide" 
+            id="carouselSite" 
+            data-ride="carousel"
+        >
+
+            <ol class="carousel-indicators">
+                <li 
+                    data-target="#carouselSite" 
+                    data-slide-to="0"
+                    class="active"
+                    aria-current="true">
+                </li>
+                <li data-target="#carouselSite" data-slide-to="1"></li>
+                <li data-target="#carouselSite" data-slide-to="2"></li>
+                <li data-target="#carouselSite" data-slide-to="3"></li>
+                <li data-target="#carouselSite" data-slide-to="4"></li>
+            </ol>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active carousel-dark">
+                    <img 
+                        src="img/pizza.jpg" 
+                        alt="Pizzas" 
+                        class="img-fluid d-block"
+                        style="height: 70vh; width: 100vw;"
+                    >
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="carousel-text-color">Pizza pizza pizza</h1>
+                        <p class="lead">
+                            Accusamus recusandae asperiores architecto voluptas consequuntur culpa.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img 
+                        src="img/fritas.jpg" 
+                        alt="Porções" 
+                        class="img-fluid d-block"
+                        style="height: 70vh; width: 100vw;"
+                    >
+                    <div class="carousel-caption d-none d-md-block bg-tranparence">
+                        <h1>Porção porção porção</h1>
+                        <p class="lead">
+                            Accusamus recusandae asperiores architecto voluptas consequuntur culpa.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img 
+                        src="img/hamburguer.jpg" 
+                        alt="Hamburguers" 
+                        class="img-fluid d-block"
+                        style="height: 70vh; width: 100vw;"
+                    >
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Hamburguers hambuerguers hamburguers</h1>
+                        <p class="lead">
+                            Accusamus recusandae asperiores architecto voluptas consequuntur culpa.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img 
+                        src="img/esfirra.jpg" 
+                        alt="esfirras" 
+                        class="img-fluid d-block"
+                        style="height: 70vh; width: 100vw;"
+                    >
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Esfirras esfirras esfirras</h1>
+                        <p class="lead">
+                            Accusamus recusandae asperiores architecto voluptas consequuntur culpa.
+                        </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img 
+                        src="img/sucos.jpg" 
+                        alt="Sucos" 
+                        class="img-fluid d-block"
+                        style="height: 70vh; width: 100vw;"
+                    >
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Sucos sucos sucos</h1>
+                        <p class="lead">
+                            Accusamus recusandae asperiores architecto voluptas consequuntur culpa
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <a 
+                href="#carouselSite" 
+                class="carousel-control-prev"
+                role="button"
+                data-slide="prev"
+            >
+                <span class="carousel-control-prev-icon"></span>
+                <span class="sr-only">anterior</span>
+            </a>
+
+            <a 
+                href="#carouselSite" 
+                class="carousel-control-next"
+                role="button"
+                data-slide="next"
+            >
+                <span class="carousel-control-next-icon"></span>
+                <span class="sr-only">Avançar</span>
+            </a>
+        </div>
+
+        <div class="container">
+
+            <!-- Botão horário de funcionamento -->
+            <div class="text-center">
+                <button 
+                    class="btn btn-danger my-3"
+                    data-toggle="modal"
+                    data-target="#siteModalMenu"
+                >
+                    Veja o Horário de funcionamento
+                </button>
+            </div>
+
+            <!-- Bem vindo -->
+            <div class="row">
+                <div class="col-12 text-center my-5">
+                    <h1 class="display-3">
+                        <i class="fa fa-cutlery text-primary" aria-hidden="true"></i> Boas vindas!
+                    </h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat necessitatibus voluptate quas reprehenderit ab, quis aliquam ex architecto. Eaque sunt iste deleniti reiciendis?</p>
+                </div>
+            </div>
+
+            <!-- cards -->
+            <div class="row justify-content-sm-center">
+                <div class="col-sm-6 col-md-4">
+                    <div class="card mb-5">
+                        <img 
+                            src="img/hamburguer.jpg" 
+                            alt="Hamburguers" 
+                            class="card-img-top"
+                        >
+                        <div class="card-body">
+                            <h2 class="card-title">Porções</h2>
+                            <h5 class="card-subtitle mb-3 text-muted">consectetur adipiscing</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                            </p>
+                        </div>
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Fritas</li>
+                            <li class="list-group-item">Isca de Frango</li>
+                            <li class="list-group-item">Peixe</li>
+                            <li class="list-group-item">Calabresa</li>
+                            <li class="list-group-item">Frango a passarinho</li>
+                        </ul>
+
+                        <div class="card-body d-flex">
+                            <button 
+                                class="btn btn-danger" 
+                                type="submit" 
+                                href="#"
+                                data-toggle="modal"
+                                data-target="#siteModalCard1"
+                            >Acessar
+                            </button>
+                            <div class="ml-auto align-self-center">
+                                <a href="#" class="card-link">Saiba Mais</a>
+                            </div>
+                        </div>
+
+                        <div class="card-footer text-center text-muted">Pronto em até 25 minutos</div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="card mb-5">
+                        <img 
+                            src="img/hamburguer.jpg" 
+                            alt="Hamburguers" 
+                            class="card-img-top"
+                        >
+                        <div class="card-body">
+                            <h2 class="card-title">Sucos</h2>
+                            <h5 class="card-subtitle mb-3 text-muted">nostrud exercitation</h5>
+                            <p class="card-text">
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+                            </p>
+                        </div>
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Laranja</li>
+                            <li class="list-group-item">Maracujá</li>
+                            <li class="list-group-item">Morango</li>
+                            <li class="list-group-item">Abacaxi</li>
+                            <li class="list-group-item">Manga</li>
+                        </ul>
+
+                        <div class="card-body d-flex">
+                            <button 
+                                class="btn btn-danger" 
+                                type="submit" 
+                                href="#"
+                                data-toggle="modal"
+                                data-target="#siteModalCard2"
+                            >Acessar
+                            </button>
+                            <div class="ml-auto align-self-center">
+                                <a href="#">Saiba Mais</a>
+                            </div>
+                        </div>
+                        
+                        <div class="card-footer text-center text-muted">Pronto em até 7 minutos</div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    <div class="card mb-5">
+                        <img 
+                            src="img/hamburguer.jpg" 
+                            alt="Hamburguers" 
+                            class="card-img-top"
+                        >
+                        <div class="card-body">
+                            <h2 class="card-title">Esfirras</h2>
+                            <h5 class="card-subtitle mb-3 text-muted">reprehenderit voluptate</h5>
+                            <p class="card-text">
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                        </div>
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Carne</li>
+                            <li class="list-group-item">Queijo</li>
+                            <li class="list-group-item">Frango</li>
+                            <li class="list-group-item">Calabresa</li>
+                            <li class="list-group-item">Brócolis</li>
+                        </ul>
+                        
+                        <div class="card-body d-flex">
+                            <button 
+                                class="btn btn-danger" 
+                                type="submit" 
+                                href="#"
+                                data-toggle="modal"
+                                data-target="#siteModalCard3"
+                            >Acessar
+                            </button>
+                            <div class="ml-auto align-self-center">
+                                <a 
+                                    href="#"
+                                    data-toggle="modal"
+                                    data-target="#siteModalCard4"
+                                >Saiba Mais</a>
+                            </div>
+                        </div>
+
+                        <div class="card-footer text-center text-muted">Pronto em até 15 minutos</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Jumbotron -->
+            <!-- <div class="jumbotron jumbotron-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="text-center">Teste</h1>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+        <!-- Jumbotron -->
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1 class="display-4">
+                            <i class="fa fa-video-camera text-primary" aria-hidden="true"></i> Nosso Parceiro
+                        </h1>
+                        <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, est quas illum doloremque doloribus magnam aliquam voluptatibus dolorem voluptate recusandae laborum earum, commodi odit quasi!</p>
+                        <hr/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <ul 
+                            class="nav nav-pills justify-content-center mb-4" 
+                            id="pillsNav" 
+                            role="tablist"
+                        >
+                            <li class="nav-item">
+                                <a 
+                                    href="#nav-item-01" 
+                                    data-toggle="pill" 
+                                    class="nav-link active" 
+                                    id="navPills01"><strong>Maionese Caseira</strong>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a 
+                                    href="#nav-item-02" 
+                                    data-toggle="pill" 
+                                    class="nav-link" 
+                                    id="navPills02"><strong>Ketchup Caseiro</strong>
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a 
+                                    href="#nav-item-03" 
+                                    data-toggle="pill" 
+                                    class="nav-link" 
+                                    id="navPills03"><strong>Molho Barbecue</strong>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content" id="navPillsContent">
+                            <div 
+                                class="tab-pane fade show active" 
+                                id="nav-item-01" 
+                                role="tabpanel"
+                            >
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <!-- 21by9, 16by9(mais usado atualmente), 4by3, 1by1 -->
+                                        <div class="embed-responsive embed-responsive-16by9"> 
+                                            <iframe 
+                                                src="https://www.youtube.com/embed/s1ja3lQZrIM" 
+                                                frameborder="0" 
+                                                class="embed-responsive-item">
+                                            </iframe>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h2>Receita de Maionese Caseira</h2>
+                                        <h4 class="text-muted mb-4"><em>Por Leo Abreu</em></h4>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam vitae ea ipsa deserunt enim quis similique iste consequuntur, dolor dolores, neque nostrum officiis numquam? Nobis eaque praesentium esse voluptas incidunt.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div 
+                                class="tab-pane fade" 
+                                id="nav-item-02" 
+                                role="tabpanel"
+                            >
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe 
+                                                src="https://www.youtube.com/embed/JEuYtWRCU7E" 
+                                                frameborder="0" 
+                                                class="embed-responsive-item">
+                                            </iframe>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h2>Receita de Ketchup Caseiro</h2>
+                                        <h4 class="text-muted mb-4"><em>Por Leo Abreu</em></h4>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam vitae ea ipsa deserunt enim quis similique iste consequuntur, dolor dolores, neque nostrum officiis numquam? Nobis eaque praesentium esse voluptas incidunt.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div 
+                                class="tab-pane fade" 
+                                id="nav-item-03" 
+                                role="tabpanel"
+                            >
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe 
+                                                src="https://www.youtube.com/embed/uzZEKYbu6Bc" 
+                                                frameborder="0" 
+                                                class="embed-responsive-item">
+                                            </iframe>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h2>Receita de Molho Barbecue Caseiro</h2>
+                                        <h4 class="text-muted mb-4"><em>Por Leo Abreu</em></h4>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam vitae ea ipsa deserunt enim quis similique iste consequuntur, dolor dolores, neque nostrum officiis numquam? Nobis eaque praesentium esse voluptas incidunt.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <!-- ScrollSpy -->
+            <div class="row">
+                <div class="col-sm-6 col-md-4 mb-3">
+                    <nav id="navbarVertical" class="navbar navbar-light bg-light">
+                        <nav class="nav nav-pills flex-column">
+                            <a href="#item1" class="nav-link">Lorem inpsun</a>
+                            <nav class="nav nav-pills flex-column">
+                                <a href="#item1-1" class="nav-link ml-1">Quistque Venenati</a>
+                                <a href="#item1-2" class="nav-link ml-1">Where does it come from?</a>
+                                <a href="#item1-3" class="nav-link ml-1">Where can I get some?</a>
+                            </nav>
+                            <a href="#item2" class="nav-link mt-2">Amet consectetur adipisicing</a>
+                            <a href="#item3" class="nav-link mt-2">Doloremque laudantium</a>
+                            <!-- <a href="#item3" class="nav-link my-2">Doloremque laudantium</a> => my= dá a margem top e bottom pois é em todo o eixo y e mt é margin-top-->
+                            <nav class="nav nav-pills flex-column">
+                                <a href="#item3-1" class="nav-link ml-1">Finibus Bonorum et Malorum</a>
+                                <a href="#item3-2" class="nav-link ml-1">1914 translation</a>
+                                <a href="#item3-3" class="nav-link ml-1">written by Cicero in 45 BC</a>
+                            </nav>
+                        </nav>
+                    </nav>
+                </div>
+
+                <div class="col-sm-6 col-md-8 mb-5">
+                    <div 
+                        data-spy="scroll" 
+                        data-target="#navbarVertical" 
+                        data-offset="0" 
+                        class="scrollspySite"
+                    >
+                        <h3 id="item1">Lorem inpsun</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nihil aspernatur iste cupiditate ratione ad molestias dolores itaque vitae laudantium quasi eos doloremque quisquam, eveniet quos fugit repudiandae. Vero, cumque.
+                        </p>
+
+                        <h5 id="item1-1">Quistque Venenati</h5>
+                        <p>t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.?</p>
+
+                        <h5 id="item1-2">Where does it come from?</h5>
+                        <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset</p>
+
+                        <h5 id="item1-3">Where can I get some?</h5>
+                        <p>College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+
+                        <h3 id="item2">Amet consectetur adipisicing</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex nihil aspernatur iste cupiditate ratione ad molestias dolores itaque vitae laudantium quasi eos doloremque quisquam, eveniet quos fugit repudiandae. Vero, cumque.
+                        </p>
+
+                        <h3 id="item3">Doloremque laudantium</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                        </p>
+
+                        <h5 id="item3-1">Finibus Bonorum et Malorum</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur temporibus distinctio rerum fugit eaque ad tempore eveniet, suscipit fuga nihil obcaecati magnam rem labore vero optio numquam aliquid saepe praesentium?</p>
+
+                        <h5 id="item3-2">1914 translation</h5>
+                        <p>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+
+                        <h5 id="item3-3">written by Cicero in 45 BC </h5>
+                        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <!-- Formulário -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center my-5">
+                    <h1 class="display-4">
+                        <i class="fa fa-lightbulb-o text-primary" aria-hidden="true"></i> Deixe a sua Sugestão
+                    </h1>
+                </div>
+            </div>
+            <div class="row justify-content-center mb-5">
+                <div class="col-sm-12 col-md-10 col-lg-8">
+                    <form>
+                        <div class="form-row"> <!-- Poderia ser só row -->
+                            <div class="form-group col-sm-6">
+                                <label for="inputName"> Nome: </label>
+                                <input 
+                                    type="text" 
+                                    class="form-control" 
+                                    id="inputName"
+                                    placeholder="Digite o seu nome"
+                                >
+                            </div>
+                            <div class="form-group col-sm-6">
+                                <label for="inputLastName"> Sobrenome: </label>
+                                <input 
+                                    type="text" 
+                                    class="form-control" 
+                                    id="inputLastName"
+                                    placeholder="Digite o seu sobrenome"
+                                >
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                <label for="inputCEP"> CEP: </label>
+                                <input 
+                                    type="text" 
+                                    class="form-control" 
+                                    id="inputCEP" 
+                                    placeholder="00000-000"
+                                >
+                            </div>
+
+                            <div class="form-group col-sm-8">
+                                <label for="inputAddress"> Endereço: </label>
+                                <input 
+                                    type="text" 
+                                    class="form-control" 
+                                    id="inputAddress" 
+                                    placeholder="Digite o seu endereço"
+                                >
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                <label for="inputComplement"> Complemento: </label>
+                                <input 
+                                    type="text" 
+                                    class="form-control" 
+                                    id="inputComplement" 
+                                    placeholder="ex: bl6 Apto 301"
+                                >
+                            </div>
+
+                            <div class="form-group col-sm-6">
+                                <label for="inputCity"> Cidade: </label>
+                                <input 
+                                    type="text" 
+                                    class="form-control" 
+                                    id="inputCity" 
+                                    placeholder="Digite a sua cidade"
+                                >
+                            </div>
+
+                            <div class="form-group col-sm-2">
+                                <label for="inputState"> Estado: </label>
+                                <select id="inputState" class="form-control">
+                                    <option selected disabled> Escolha... </option>
+                                    <option value="">São Paulo</option>
+                                    <option value="">Rio de Janeiro</option>
+                                    <option value="">Minas Gerais</option>
+                                    <option value="">Espito Santo</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-sm-12">
+                                <div class="form-check">
+                                    <label for="inputCheckbox" class="form-check-label ">
+                                        <input 
+                                            id="inputCheckbox" 
+                                            class="form-check-input" 
+                                            type="checkbox"
+                                        > Desejo receber novidades e promoções por e-mail
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-sm-12">
+                                <button class="btn btn-primary">Enviar</button>
+                                <!-- popover só funciona em links e botões -->
+                                <a 
+                                    tabindex="0" 
+                                    class="btn btn-secondary ml-2" 
+                                    role="button" 
+                                    data-toggle="popover"
+                                    data-placement="right"
+                                    data-trigger="focus"
+                                    title="Ajuda"
+                                    data-content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta sequi autem asperiores nostrum facere aliquam perspiciatis enim, tenetur iste laudantium ratione itaque nam fugit voluptates, voluptatibus aliquid, alias illo veritatis?"
+                                > Ajuda
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rodapé -->
+        
+        <div style="background-color: #ffc1077a;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 mb-3"><hr></div>
+                    <div class="col-sm-4">
+                        <h3>Pizzaria</h3>
+                        <p>Fundada em 1970, Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis laboriosam alias magnam. Mollitia placeat fuga maiores quam, sint sit corporis non officia id quas enim commodi hic laborum consequuntur aperiam!</p>
+                        <p>Veja a seção <a href=""><em>para saber mais</em></a> e conheça a nossa história a fundo!</p>
+                    </div>
+                    <div class="col-sm-4 mb-4"> <!-- list group -->
+                        <h3>Menu</h3>
+                        <!-- Poderia também ser feita com ul e lis, pprém o layout não ficaria geralmente como os rodapés ficam -->
+                        <div class="list-group text-center">
+                            <a 
+                                href="#" 
+                                class="list-group-item list-group-item-action list-group-item-primary"
+                                > Perfil 
+                            </a>
+                            <a 
+                                href="#" 
+                                class="list-group-item list-group-item-action list-group-item-primary"
+                                > Pedidos
+                             </a>
+                            <a 
+                                href="#" 
+                                class="list-group-item list-group-item-action list-group-item-primary"
+                                > Depoimentos 
+                            </a>
+                            <a 
+                                href="#" 
+                                class="list-group-item list-group-item-action list-group-item-primary"
+                                > Fale conosco 
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-4"> <!-- btn group -->
+                        <h3>Social</h3>
+                        <div class="btn-group-vertical btn-block btn-group-lg" role="group">
+                            <a href="#" class="btn btn-outline-primary">
+                                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                                Facebook
+                            </a>
+                            <a href="#" class="btn btn-outline-primary">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                                Instagram
+                            </a>
+                            <a href="#" class="btn btn-outline-primary">
+                                <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                                Twitter
+                            </a>
+                        </div>
+                    </div>
+                </div>                   
+            </div>
+            
+        </div>
+        
+        <div class="col-12 mt-5"> <!-- citação  -->
+            <blockquote class="blockquote text-center">
+                <p class="mb-0">
+                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                        O sucesso não é garantido, mas o fracasso é certo se você não estiver emocionalemente envolvido em seu trabalho!
+                    <i class="fa fa-quote-right" aria-hidden="true"></i>
+                </p>
+                <footer class="blockquote-footer">
+                    Biz Stone <cite title="Source Title"> Fundador do Twitter </cite>
+                </footer>
+            </blockquote>
+        </div>
+        <!-- Modal menu -->
+        <div 
+            class="modal fade" 
+            id="siteModalMenu"
+            tabindex="-1"
+            role="dialog"
+        >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title text-center">Obrigada por comprar conosco!</h4>
+                        <button class="close" type="button" data-dismiss="modal">
+                            <!-- <span>x</span> -->
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-4">
+                                        <table class="table table-striped">
+                                           <tr class="row">
+                                               <th>Dia</th>
+                                               <th>Horário</th>
+                                           </tr> 
+                                           <tr class="row">
+                                               <td>Seg</td>
+                                               <td>Fechado</td>
+                                           </tr>
+                                           <tr class="row">
+                                               <td>Ter</td>
+                                               <td>18:00</td>
+                                           </tr>
+                                           <tr class="row">
+                                               <td>Qua</td>
+                                               <td>18:00</td>
+                                           </tr>
+                                           <tr class="row">
+                                               <td>Qui</td>
+                                               <td>17:00</td>
+                                           </tr>
+                                           <tr class="row">
+                                               <td>Sex</td>
+                                               <td>16:00</td>
+                                           </tr>
+                                           <tr class="row">
+                                               <td>Sáb</td>
+                                               <td>16:00</td>
+                                           </tr>
+                                           <tr class="row">
+                                               <td>Dom</td>
+                                               <td>17:00</td>
+                                           </tr>
+                                        </table>
+                                    </div>
+                                    <div class="col-8">
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, officiis tenetur deleniti architecto aliquid hic numquam tempora eveniet sapiente sit est, tempore, necessitatibus molestias doloribus fugiat neque quia vitae iste! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates vel vitae voluptatum inventore similique natus, beatae, eligendi accusantium praesentium minus facilis. Fuga veniam facilis voluptatibus impedit ipsum animi debitis dolor?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-outline-primary" type="button" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal card 1 - normal -->
+        <div 
+            class="modal fade" 
+            id="siteModalCard1"
+            tabindex="-1"
+            role="dialog"
+        >
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title text-center">Obrigada por comprar conosco!</h4>
+                        <button class="close" type="button" data-dismiss="modal">
+                            <!-- <span>x</span> -->
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="mb-5">Consulte nossas promoções semanais!** De segunda a quinta, tudo em dobro. De sexta a domingo, peça acima de duas pizzas e ganho refrigerante + borda. <br>
+                            Faça seu pedido também pelo app, whatsapp ou site.
+                        </p>
+                        <p class="text-muted"><em>** veja mais promoções e combos no app e site!</em></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-outline-primary" type="button" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal card 2 - small-->
+        <div 
+            class="modal fade" 
+            id="siteModalCard2"
+            tabindex="-1"
+            role="dialog"
+        >
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title text-center">Obrigada por comprar conosco!</h4>
+                        <button class="close" type="button" data-dismiss="modal">
+                            <!-- <span>x</span> -->
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="mb-5">Consulte nossas promoções semanais!** <br/><br/>De segunda a quinta, tudo em dobro. <br/><br/>De sexta a domingo, peça acima de duas pizzas e ganho refrigerante + borda. <br/><br/>Faça seu pedido também pelo app, whatsapp ou site.
+                        </p>
+                        <p class="text-muted"><em>** veja mais promoções e combos no app e site!</em></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-outline-primary" type="button" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal card 3 - large -->
+        <div 
+            class="modal fade" 
+            id="siteModalCard3"
+            tabindex="-1"
+            role="dialog"
+        >
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title text-center">Obrigada por comprar conosco!</h4>
+                        <button class="close" type="button" data-dismiss="modal">
+                            <!-- <span>x</span> -->
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <p class="mb-5">Consulte nossas promoções semanais!** <br/><br/>De segunda a quinta, tudo em dobro. <br/><br/>De sexta a domingo, peça acima de duas pizzas e ganho refrigerante + borda. <br/><br/>Faça seu pedido também pelo app, whatsapp ou site.
+                        </p>
+                        <p class="text-muted"><em>** veja mais promoções e combos no app e site!</em></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-outline-primary" type="button" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal card 4 - scroll -->
+        <div 
+            class="modal fade" 
+            id="siteModalCard4"
+            tabindex="-1"
+            role="dialog"
+        >
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title text-center">Obrigada por comprar conosco!</h4>
+                        <button class="close" type="button" data-dismiss="modal">
+                            <!-- <span>x</span> -->
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <p class="mb-5">Consulte nossas promoções semanais!** <br/><br/>De segunda a quinta, tudo em dobro. <br/><br/>De sexta a domingo, peça acima de duas pizzas e ganho refrigerante + borda. <br/><br/>Faça seu pedido também pelo app, whatsapp ou site.
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto doloribus, doloremque nihil quo rerum aliquid optio, corporis inventore earum dolores omnis deserunt modi, nam unde! Voluptatum eos quo fugit excepturi!
+                        Fuga ex perspiciatis, amet explicabo impedit provident nemo sapiente, voluptatum excepturi suscipit dolores consequuntur doloremque. Nisi laborum in quisquam fuga quos mollitia reiciendis maxime, provident excepturi at commodi? Alias, sit.
+                        Inventore facilis ratione at qui libero et praesentium cum, fuga commodi blanditiis vitae nemo, repudiandae sit debitis reiciendis! Sit modi quibusdam quidem facilis. Sunt accusamus tenetur eveniet laborum in dolores.
+                        Molestias amet nobis tenetur nostrum veniam eos sequi iusto vero labore incidunt sunt, vitae omnis non, earum aperiam provident velit, blanditiis iste doloremque quia dolor repudiandae hic. In, quisquam distinctio.
+                        Tempora voluptatum aperiam incidunt, quasi ut magni nulla quam libero ipsa fuga sapiente magnam veniam voluptate, sed modi dolore illo cum corrupti nisi corporis! Excepturi, velit. Magnam aliquam voluptatibus eaque!
+                        Sequi ab quisquam deserunt expedita quia. Facere corrupti repellat illum molestias magni enim asperiores, qui quam expedita aliquid impedit reiciendis et at nam porro autem fugiat in? Aspernatur, facilis aperiam.
+                        Nobis voluptate, necessitatibus a nulla ex eveniet rem ducimus, ullam quidem facilis, omnis tempora odit distinctio illo libero maxime ipsa illum corporis dolorem? Deserunt deleniti ex quasi numquam. Qui, temporibus?
+                        Quas saepe aperiam minus nostrum blanditiis tempore deserunt vero accusantium quaerat minima, exercitationem aliquam maiores sunt, magnam rerum quasi sed itaque enim! Vel harum aliquid ipsum magni provident deserunt ex?
+                        Iste quo sit maiores doloribus qui odio perferendis ab non est harum! Quae, nisi excepturi officia deserunt consequuntur delectus autem, dolorum harum, vel aut dolorem doloremque beatae aliquam. At, placeat.
+                        Aliquam cum rem, minus iure asperiores nisi quod delectus dolorum quo fugiat officia reprehenderit velit non rerum maxime illum impedit neque vel quas. Eos hic rerum ea nemo neque numquam!</p>
+                        <p class="text-muted"><em>** veja mais promoções e combos no app e site!</em></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-outline-primary" type="button" data-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="../node_modules/jquery/dist/jquery.js"></script>
+        <!-- <script src="../node_modules/popper.js/dist/popper.js"></script> -->
+        <script src="../node_modules/popper.js/dist/umd/popper.js"></script>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="./js/index.js"></script>
+    </body>
+</html>

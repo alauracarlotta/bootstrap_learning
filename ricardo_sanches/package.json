@@ -1,0 +1,25 @@
+{
+  "name": "bootstrap4_ricardo_sanches",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/laura.carlotta/bootstrap4_ricardo_sanches.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/laura.carlotta/bootstrap4_ricardo_sanches/issues"
+  },
+  "homepage": "https://gitlab.com/laura.carlotta/bootstrap4_ricardo_sanches#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1"
+  }
+}
